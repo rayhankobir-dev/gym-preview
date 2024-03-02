@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gym Home Page</title>
+    <title>Weekly Meal Plan</title>
     <link rel="shortcut icon" type="image/x-icon" href="../../img/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,12 +23,11 @@
                 <img class="h-9" src="assets/images/logo.png" />
             </div>
             <div class="hidden items-center justify-between gap-12 text-black md:flex">
-                <a class="text-sm font-medium text-purple-700" href="javascript:void(0)">Home</a>
-                <a class="text-sm font-medium text-grey-900 hover:text-purple-700" href="javascript:void(0)">Meal
-                    Plan</a>
-                <a class="text-sm font-medium text-grey-900 hover:text-purple-700"
-                    href="javascript:void(0)">Calculator</a>
-                <a class="text-sm font-medium text-grey-900 hover:text-purple-700" href="javascript:void(0)">Pricing</a>
+                <a class="text-sm font-medium text-grey-900 hover:text-purple-700" href="index.html">Home</a>
+                <a class="text-sm font-medium text-grey-900 hover:text-purple-700" href="meal.html">Recipies</a>
+                <a class="text-sm font-medium text-purple-700" href="plan.html">Meal Plan</a>
+                <a class="text-sm font-medium text-grey-900 hover:text-purple-700" href="calculator.html">Calculator</a>
+                <a class="text-sm font-medium text-grey-900 hover:text-purple-700" href="pricing.html">Pricing</a>
             </div>
             <div class="hidden items-center gap-8 md:flex">
                 <button class="flex items-center text-sm font-medium text-black">
@@ -55,7 +54,7 @@
                 </a>
             </li>
 
-            <li class="bg-purple-100 p-2 rounded-full text-purple-700">
+            <li>
                 <a href="meal.html">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -70,8 +69,8 @@
                 </a>
             </li>
 
-            <li class="">
-                <a href="meal.html">
+            <li class="bg-purple-100 p-2 rounded-full text-purple-700">
+                <a href="plan.html">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="lucide lucide-heart-pulse">
@@ -83,24 +82,33 @@
             </li>
 
             <li>
-                <a href="index.html">
+                <a href="pricing.html">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-user">
-                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
-                        <circle cx="12" cy="7" r="4" />
+                        class="lucide lucide-gem">
+                        <path d="M6 3h12l4 6-10 13L2 9Z" />
+                        <path d="M11 3 8 9l4 13 4-13-3-6" />
+                        <path d="M2 9h20" />
                     </svg>
+
                 </a>
             </li>
 
             <li>
-                <a href="index.html">
+                <a href="calculator.html">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-settings">
-                        <path
-                            d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" />
-                        <circle cx="12" cy="12" r="3" />
+                        class="lucide lucide-calculator">
+                        <rect width="16" height="20" x="4" y="2" rx="2" />
+                        <line x1="8" x2="16" y1="6" y2="6" />
+                        <line x1="16" x2="16" y1="14" y2="18" />
+                        <path d="M16 10h.01" />
+                        <path d="M12 10h.01" />
+                        <path d="M8 10h.01" />
+                        <path d="M12 14h.01" />
+                        <path d="M8 14h.01" />
+                        <path d="M12 18h.01" />
+                        <path d="M8 18h.01" />
                     </svg>
                 </a>
             </li>
@@ -108,147 +116,243 @@
     </header>
 
 
-    <main class="pt-0 md:pt-24">
-        <section class="bg-purple-50 py-5 px-6">
-            <div class="flex flex-col gap-1">
-                <h1 class="text-2xl font-bold">Food Recipies For You</h1>
-                <p class="font-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                <form class="flex border rounded-lg h-12 overflow-hidden mt-3">
-                    <input type="search" class="w-full h-full px-4 focus:outline-none">
-                    <button type="button" class="w-12 inline-flex justify-center items-center bg-purple-600 text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-search">
-                            <circle cx="11" cy="11" r="8" />
-                            <path d="m21 21-4.3-4.3" />
-                        </svg>
-                    </button>
-                </form>
-            </div>
-        </section>
+    <main class="pt-0">
+        <div class="max-w-7xl mx-auto">
+            <section class="bg-purple-50 py-5 px-6 pt-10">
+                <div class="flex flex-col gap-1">
+                    <h1 class="text-3xl font-bold">Meal Plan For A Week</h1>
+                    <p class="font-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+            </section>
 
-        <section class="pt-2 pb-8 px-6 bg-purple-50">
-            <div class="grid grid-cols-3 gap-3 mb-5">
-                <button
-                    class="h-12 inline-flex justify-center items-center px-3 bg-purple-600 text-white font-semibold rounded-xl">
-                    <span class="inline-flex gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-heart">
-                            <path
-                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
-                        </svg>
-                        Favorites
-                    </span>
-                </button>
-                <button
-                    class="h-12 inline-flex justify-center items-center px-3 bg-purple-600 text-white font-semibold rounded-xl">
-                    <span class="inline-flex gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-arrow-down-z-a">
-                            <path d="m3 16 4 4 4-4" />
-                            <path d="M7 4v16" />
-                            <path d="M15 4h5l-5 6h5" />
-                            <path d="M15 20v-3.5a2.5 2.5 0 0 1 5 0V20" />
-                            <path d="M20 18h-5" />
-                        </svg>
-                        Sorting
-                    </span>
-                </button>
-                <button
-                    class="h-12 inline-flex justify-center items-center px-3 bg-purple-600 text-white font-semibold rounded-xl">
-                    <span class="inline-flex gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-sliders-horizontal">
-                            <line x1="21" x2="14" y1="4" y2="4" />
-                            <line x1="10" x2="3" y1="4" y2="4" />
-                            <line x1="21" x2="12" y1="12" y2="12" />
-                            <line x1="8" x2="3" y1="12" y2="12" />
-                            <line x1="21" x2="16" y1="20" y2="20" />
-                            <line x1="12" x2="3" y1="20" y2="20" />
-                            <line x1="14" x2="14" y1="2" y2="6" />
-                            <line x1="8" x2="8" y1="10" y2="14" />
-                            <line x1="16" x2="16" y1="18" y2="22" />
-                        </svg>
-                        Filter
-                    </span>
-                </button>
-            </div>
-            <div class="grid grid-cols-2 gap-3">
-                <div class="flex flex-col rounded-lg overflow-hidden bg-white shadow">
-                    <div class="relative">
-                        <img
-                            src="https://www.healthymealplans.com/static/images/landing-2020/specialty-meal-plan-12week@2x.png">
-
-                        <button class="absolute bottom-2 right-2 text-purple-700 z-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-heart">
-                                <path
-                                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
-                            </svg>
-                        </button>
+            <section class="pt-2 pb-8 px-6 space-y-5 bg-purple-50 rounded-lg overflow-hidden">
+                <div class="grid grid-cols-7 border mb-5 divide-x rounded-lg">
+                    <div class="flex flex-col items-center px-2 py-2">
+                        <h3 class="font-semibold text-md uppercase">Fri</h3>
+                        <p class="text-md letter-spacing-1">12</p>
                     </div>
-                    <h2 class="p-2 text-lg font-semibold">Grilled Chiken & Vegetables</h2>
+                    <div class="flex flex-col items-center px-2 py-2 bg-purple-100">
+                        <h3 class="font-semibold text-md uppercase">SAT</h3>
+                        <p class="text-md letter-spacing-1">12</p>
+                    </div>
+                    <div class="flex flex-col items-center px-2 py-2">
+                        <h3 class="font-semibold text-md uppercase">Sun</h3>
+                        <p class="text-md letter-spacing-1">12</p>
+                    </div>
+                    <div class="flex flex-col items-center px-2 py-2">
+                        <h3 class="font-semibold text-md uppercase">Mon</h3>
+                        <p class="text-md letter-spacing-1">12</p>
+                    </div>
+                    <div class="flex flex-col items-center px-2 py-2">
+                        <h3 class="font-semibold text-md uppercase">Tue</h3>
+                        <p class="text-md letter-spacing-1">12</p>
+                    </div>
+                    <div class="flex flex-col items-center px-2 py-2">
+                        <h3 class="font-semibold text-md uppercase">Wed</h3>
+                        <p class="text-md letter-spacing-1">12</p>
+                    </div>
+                    <div class="flex flex-col items-center px-2 py-2">
+                        <h3 class="font-semibold text-md uppercase">Thu</h3>
+                        <p class="text-md letter-spacing-1">12</p>
+                    </div>
                 </div>
 
-                <div class="flex flex-col rounded-lg overflow-hidden bg-white shadow">
-                    <div class="relative">
-                        <img
-                            src="https://www.healthymealplans.com/static/images/landing-2020/specialty-meal-plan-12week@2x.png">
-
-                        <button class="absolute bottom-2 right-2 text-purple-700 z-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-heart">
-                                <path
-                                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
-                            </svg>
-                        </button>
-                    </div>
-                    <h2 class="p-2 text-lg font-semibold">Grilled Chiken & Vegetables</h2>
+                <div class="py-6 space-y-2">
+                    <h1 class="text-3xl font-bold">Saturday, 25 March</h1>
+                    <p class="font-light">Todays you meal plan over here. Please continue this meal plan to maintain
+                        your
+                        fitness</p>
                 </div>
+            </section>
 
-                <div class="flex flex-col rounded-lg overflow-hidden bg-white shadow">
-                    <div class="relative">
-                        <img
-                            src="https://www.healthymealplans.com/static/images/landing-2020/specialty-meal-plan-12week@2x.png">
-
-                        <button class="absolute bottom-2 right-2 text-purple-700 z-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-heart">
-                                <path
-                                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
-                            </svg>
-                        </button>
+            <section class="px-6">
+                <article class="flex flex-col gap-3">
+                    <div class="flex items-center gap-2 py-5">
+                        <div class="w-full h-[1px] bg-gray-200"></div>
+                        <h3 class="uppercase font-bold text-xl text-purple-700">Breakfast</h3>
+                        <div class="w-full h-[1px] bg-gray-200"></div>
                     </div>
-                    <h2 class="p-2 text-lg font-semibold">Grilled Chiken & Vegetables</h2>
-                </div>
 
-                <div class="flex flex-col rounded-lg overflow-hidden bg-white shadow">
-                    <div class="relative">
-                        <img
-                            src="https://www.healthymealplans.com/static/images/landing-2020/specialty-meal-plan-12week@2x.png">
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+                        <div
+                            class="group w-full flex justify-between gap-3 border rounded-lg overflow-hidden bg-gray-50 hover:bg-white duration-500 hover:shadow">
+                            <img class="h-28 w-auto group-hover:scale-110 duration-500"
+                                src="https://www.healthymealplans.com/static/images/landing-2020/specialty-meal-plan-12week@2x.png">
+                            <div class="flex flex-1 p-2 items-center divide-x">
+                                <div class="flex-1 flex flex-col items-between gap-1">
+                                    <h2 class="text-xl font-semibold">Meal Name</h2>
+                                    <p class="text-gray-500 font-light text-sm">8 Serving</p>
+                                </div>
+                                <div class="px-2 flex flex-col gap-1 font-light text-sm">
+                                    <p>10% Calories</p>
+                                    <p>30% Protins</p>
+                                    <p>60% Others</p>
+                                </div>
+                            </div>
+                        </div>
 
-                        <button class="absolute bottom-2 right-2 text-purple-700 z-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-heart">
-                                <path
-                                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
-                            </svg>
-                        </button>
+                        <div
+                            class="group w-full flex justify-between gap-3 border rounded-lg overflow-hidden bg-gray-50 hover:bg-white duration-500 hover:shadow">
+                            <img class="h-28 w-auto group-hover:scale-110 duration-500"
+                                src="https://www.healthymealplans.com/static/images/landing-2020/specialty-meal-plan-12week@2x.png">
+                            <div class="flex flex-1 p-2 items-center divide-x">
+                                <div class="flex-1 flex flex-col items-between gap-1">
+                                    <h2 class="text-xl font-semibold">Meal Name</h2>
+                                    <p class="text-gray-500 font-light text-sm">8 Serving</p>
+                                </div>
+                                <div class="px-2 flex flex-col gap-1 font-light text-sm">
+                                    <p>10% Calories</p>
+                                    <p>30% Protins</p>
+                                    <p>60% Others</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="group w-full flex justify-between gap-3 border rounded-lg overflow-hidden bg-gray-50 hover:bg-white duration-500 hover:shadow">
+                            <img class="h-28 w-auto group-hover:scale-110 duration-500"
+                                src="https://www.healthymealplans.com/static/images/landing-2020/specialty-meal-plan-12week@2x.png">
+                            <div class="flex flex-1 p-2 items-center divide-x">
+                                <div class="flex-1 flex flex-col items-between gap-1">
+                                    <h2 class="text-xl font-semibold">Meal Name</h2>
+                                    <p class="text-gray-500 font-light text-sm">8 Serving</p>
+                                </div>
+                                <div class="px-2 flex flex-col gap-1 font-light text-sm">
+                                    <p>10% Calories</p>
+                                    <p>30% Protins</p>
+                                    <p>60% Others</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h2 class="p-2 text-lg font-semibold">Grilled Chiken & Vegetables</h2>
-                </div>
-            </div>
-        </section>
+                </article>
+
+                <article class="flex flex-col gap-3">
+                    <div class="flex items-center gap-2 py-5">
+                        <div class="w-full h-[1px] bg-gray-200"></div>
+                        <h3 class="uppercase font-bold text-xl text-purple-700">LUNCH</h3>
+                        <div class="w-full h-[1px] bg-gray-200"></div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+                        <div
+                            class="group w-full flex justify-between gap-3 border rounded-lg overflow-hidden bg-gray-50 hover:bg-white duration-500 hover:shadow">
+                            <img class="h-28 w-auto group-hover:scale-110 duration-500"
+                                src="https://www.healthymealplans.com/static/images/landing-2020/specialty-meal-plan-12week@2x.png">
+                            <div class="flex flex-1 p-2 items-center divide-x">
+                                <div class="flex-1 flex flex-col items-between gap-1">
+                                    <h2 class="text-xl font-semibold">Meal Name</h2>
+                                    <p class="text-gray-500 font-light text-sm">8 Serving</p>
+                                </div>
+                                <div class="px-2 flex flex-col gap-1 font-light text-sm">
+                                    <p>10% Calories</p>
+                                    <p>30% Protins</p>
+                                    <p>60% Others</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="group w-full flex justify-between gap-3 border rounded-lg overflow-hidden bg-gray-50 hover:bg-white duration-500 hover:shadow">
+                            <img class="h-28 w-auto group-hover:scale-110 duration-500"
+                                src="https://www.healthymealplans.com/static/images/landing-2020/specialty-meal-plan-12week@2x.png">
+                            <div class="flex flex-1 p-2 items-center divide-x">
+                                <div class="flex-1 flex flex-col items-between gap-1">
+                                    <h2 class="text-xl font-semibold">Meal Name</h2>
+                                    <p class="text-gray-500 font-light text-sm">8 Serving</p>
+                                </div>
+                                <div class="px-2 flex flex-col gap-1 font-light text-sm">
+                                    <p>10% Calories</p>
+                                    <p>30% Protins</p>
+                                    <p>60% Others</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="group w-full flex justify-between gap-3 border rounded-lg overflow-hidden bg-gray-50 hover:bg-white duration-500 hover:shadow">
+                            <img class="h-28 w-auto group-hover:scale-110 duration-500"
+                                src="https://www.healthymealplans.com/static/images/landing-2020/specialty-meal-plan-12week@2x.png">
+                            <div class="flex flex-1 p-2 items-center divide-x">
+                                <div class="flex-1 flex flex-col items-between gap-1">
+                                    <h2 class="text-xl font-semibold">Meal Name</h2>
+                                    <p class="text-gray-500 font-light text-sm">8 Serving</p>
+                                </div>
+                                <div class="px-2 flex flex-col gap-1 font-light text-sm">
+                                    <p>10% Calories</p>
+                                    <p>30% Protins</p>
+                                    <p>60% Others</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="flex flex-col gap-3">
+                    <div class="flex items-center gap-2 py-5">
+                        <div class="w-full h-[1px] bg-gray-200"></div>
+                        <h3 class="uppercase font-bold text-xl text-purple-700">DINNER</h3>
+                        <div class="w-full h-[1px] bg-gray-200"></div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+                        <div
+                            class="group w-full flex justify-between gap-3 border rounded-lg overflow-hidden bg-gray-50 hover:bg-white duration-500 hover:shadow">
+                            <img class="h-28 w-auto group-hover:scale-110 duration-500"
+                                src="https://www.healthymealplans.com/static/images/landing-2020/specialty-meal-plan-12week@2x.png">
+                            <div class="flex flex-1 p-2 items-center divide-x">
+                                <div class="flex-1 flex flex-col items-between gap-1">
+                                    <h2 class="text-xl font-semibold">Meal Name</h2>
+                                    <p class="text-gray-500 font-light text-sm">8 Serving</p>
+                                </div>
+                                <div class="px-2 flex flex-col gap-1 font-light text-sm">
+                                    <p>10% Calories</p>
+                                    <p>30% Protins</p>
+                                    <p>60% Others</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="group w-full flex justify-between gap-3 border rounded-lg overflow-hidden bg-gray-50 hover:bg-white duration-500 hover:shadow">
+                            <img class="h-28 w-auto group-hover:scale-110 duration-500"
+                                src="https://www.healthymealplans.com/static/images/landing-2020/specialty-meal-plan-12week@2x.png">
+                            <div class="flex flex-1 p-2 items-center divide-x">
+                                <div class="flex-1 flex flex-col items-between gap-1">
+                                    <h2 class="text-xl font-semibold">Meal Name</h2>
+                                    <p class="text-gray-500 font-light text-sm">8 Serving</p>
+                                </div>
+                                <div class="px-2 flex flex-col gap-1 font-light text-sm">
+                                    <p>10% Calories</p>
+                                    <p>30% Protins</p>
+                                    <p>60% Others</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="group w-full flex justify-between gap-3 border rounded-lg overflow-hidden bg-gray-50 hover:bg-white duration-500 hover:shadow">
+                            <img class="h-28 w-auto group-hover:scale-110 duration-500"
+                                src="https://www.healthymealplans.com/static/images/landing-2020/specialty-meal-plan-12week@2x.png">
+                            <div class="flex flex-1 p-2 items-center divide-x">
+                                <div class="flex-1 flex flex-col items-between gap-1">
+                                    <h2 class="text-xl font-semibold">Meal Name</h2>
+                                    <p class="text-gray-500 font-light text-sm">8 Serving</p>
+                                </div>
+                                <div class="px-2 flex flex-col gap-1 font-light text-sm">
+                                    <p>10% Calories</p>
+                                    <p>30% Protins</p>
+                                    <p>60% Others</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
     </main>
 
-    <footer class="pb-14">
+    <footer class="pb-14 border-t mt-10">
         <div class="container mx-auto flex flex-col">
             <div class="my-10 flex w-full flex-col items-center">
                 <div class="mb-10 shrink-0">
@@ -339,6 +443,7 @@
             </div>
         </div>
     </footer>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

@@ -29,11 +29,10 @@
             </div>
             <div class="hidden items-center justify-between gap-12 text-black md:flex">
                 <a class="text-sm font-medium text-purple-700" href="index.html">Home</a>
-                <a class="text-sm font-medium text-grey-900 hover:text-purple-700" href="meal.html">Meal
-                    Plan</a>
-                <a class="text-sm font-medium text-grey-900 hover:text-purple-700"
-                    href="index.html#calculator">Calculator</a>
-                <a class="text-sm font-medium text-grey-900 hover:text-purple-700" href="index.html#pricing">Pricing</a>
+                <a class="text-sm font-medium text-grey-900 hover:text-purple-700" href="meal.html">Recipies</a>
+                <a class="text-sm font-medium text-grey-900 hover:text-purple-700" href="plan.html">Meal Plan</a>
+                <a class="text-sm font-medium text-grey-900 hover:text-purple-700" href="calculator.html">Calculator</a>
+                <a class="text-sm font-medium text-grey-900 hover:text-purple-700" href="pricing.html">Pricing</a>
             </div>
             <div class="hidden items-center gap-8 md:flex">
                 <button class="flex items-center text-sm font-medium text-black">
@@ -76,7 +75,7 @@
             </li>
 
             <li class="">
-                <a href="index.html#calculator">
+                <a href="plan.html">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="lucide lucide-heart-pulse">
@@ -88,7 +87,7 @@
             </li>
 
             <li>
-                <a href="index.html#pricing">
+                <a href="pricing.html">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="lucide lucide-gem">
@@ -101,12 +100,20 @@
             </li>
 
             <li>
-                <a href="index.html#pricing">
+                <a href="calculator.html">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-user">
-                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
-                        <circle cx="12" cy="7" r="4" />
+                        class="lucide lucide-calculator">
+                        <rect width="16" height="20" x="4" y="2" rx="2" />
+                        <line x1="8" x2="16" y1="6" y2="6" />
+                        <line x1="16" x2="16" y1="14" y2="18" />
+                        <path d="M16 10h.01" />
+                        <path d="M12 10h.01" />
+                        <path d="M8 10h.01" />
+                        <path d="M12 14h.01" />
+                        <path d="M8 14h.01" />
+                        <path d="M12 18h.01" />
+                        <path d="M8 18h.01" />
                     </svg>
                 </a>
             </li>
@@ -563,7 +570,7 @@
         </section>
     </main>
 
-    <footer class="pb-14">
+    <footer class="pb-14 mt-5 border-t">
         <div class="container mx-auto flex flex-col">
             <div class="my-10 flex w-full flex-col items-center">
                 <div class="mb-10 shrink-0">
@@ -654,6 +661,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
