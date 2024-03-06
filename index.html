@@ -263,37 +263,51 @@
                 </div>
 
                 <div class="grid grid-cols-2 gap-x-6">
-                    <div class="flex flex-start items-center"><input id="metric-system" type="radio"
+                    <div class="flex flex-start items-center">
+                        <input id="metric" type="radio" checked
                             class="mr-5 w-8 h-8 appearance-none border bg-pure-white border-borders rounded-full hover:border-blue hover:cursor-pointer checked:hover:border-borders checked:border-8 checked:bg-blue"
-                            name="system" value="metric"><label for="metric-system"
-                            class="text-body-m font-semibold">Metric</label></div>
-                    <div class="flex flex-start items-center"><input id="imperial-system" type="radio"
-                            class="mr-5 w-8 h-8 appearance-none border bg-pure-white border-borders rounded-full hover:border-blue hover:cursor-pointer checked:hover:border-borders checked:border-8 checked:bg-blue"
-                            name="system" value="imperial"><label for="imperial-system"
-                            class="text-body-m font-semibold">Imperial</label></div>
-                </div>
-                <form class="grid gap-y-4">
-                    <div class="col-span-1 flex flex-col gap-y-2"><label for="height"
-                            class="text-body-s font-normal leading-body text-dark-electric-blue">Height</label>
-                        <div class="flex items-center"><input id="height" placeholder="0"
-                                class="font-custom text-heading-m w-full px-6 py-3.5 rounded-xl border border-borders bg-pure-white focus:outline-none"
-                                name="height"><span
-                                class="text-heading-m text-blue font-semibold -ml-12 md:-ml-16">cm</span></div>
+                            name="unit" value="metric">
+                        <label for="metric" class="text-body-m font-semibold">Metric</label>
                     </div>
-                    <div class="col-span-1 flex flex-col gap-y-2">
-                        <label for="weight" class="text-body-s font-normal leading-body text-dark-electric-blue">
-                            Weight
-                        </label>
-                        <div class="flex items-center">
-                            <input name="weight" id="weight" placeholder="0"
-                                class="font-custom text-heading-m w-full px-6 py-3.5 rounded-xl border border-borders bg-pure-white focus:outline-none">
-                            <span class="text-heading-m text-blue font-semibold -ml-12 md:-ml-16">kg</span>
+                    <div class="flex flex-start items-center">
+                        <input id="imperial" type="radio"
+                            class="mr-5 w-8 h-8 appearance-none border bg-pure-white border-borders rounded-full hover:border-blue hover:cursor-pointer checked:hover:border-borders checked:border-8 checked:bg-blue"
+                            name="unit" value="imperial">
+                        <label for="imperial" class="text-body-m font-semibold">Imperial</label>
+                    </div>
+                </div>
+                <form id="bmi-calculator" method="post">
+                    <div class="grid gap-y-4">
+                        <div class="col-span-1 flex flex-col gap-y-2"><label for="height"
+                                class="text-body-s font-normal leading-body text-dark-electric-blue">Height</label>
+                            <div class="flex items-center">
+                                <input id="height" placeholder="0"
+                                    class="font-custom text-heading-m w-full px-6 py-3.5 rounded-xl border border-borders bg-pure-white focus:outline-none"
+                                    name="height">
+                                <span id="heightUnit"
+                                    class="text-heading-m text-blue font-semibold -ml-12 md:-ml-16">cm</span>
+                            </div>
+                        </div>
+
+                        <div class="col-span-1 flex flex-col gap-y-2">
+                            <label for="weight" class="text-body-s font-normal leading-body text-dark-electric-blue">
+                                Weight
+                            </label>
+                            <div class="flex items-center">
+                                <input name="weight" id="weight" placeholder="0"
+                                    class="font-custom text-heading-m w-full px-6 py-3.5 rounded-xl border border-borders bg-pure-white focus:outline-none">
+                                <span id="weightUnit"
+                                    class="text-heading-m text-blue font-semibold -ml-12 md:-ml-16">kg</span>
+                            </div>
                         </div>
                     </div>
+                    <p id="resultContainer" class="hidden mt-2 py-3 bg-purple-100 rounded-lg px-4 font-medium">
+                        Your BMI is: <strong id="bmiResult">4545</strong>
+                    </p>
+                    <p id="error-msg" class="text-red-500 font-light text-sm py-2"></p>
+                    <button
+                        class="mt-2 w-full bg-purple-500 text-white text-md font-semibold rounded-lg py-3.5">Calculate</button>
                 </form>
-
-                <button
-                    class="w-full bg-purple-500 text-white text-md font-semibold rounded-lg py-3.5">Calculate</button>
             </div>
         </section>
 
